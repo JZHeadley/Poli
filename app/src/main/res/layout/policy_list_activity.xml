@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/policy_list_activity">
+    android:id="@+id/policy_list_activity"
+    android:background="@drawable/demographic_background">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"

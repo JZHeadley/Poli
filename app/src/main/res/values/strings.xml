@@ -16,6 +16,7 @@
         <item>Queer</item>
         <item>Intersex</item>
         <item>Gay</item>
+        <item>Heterosexual</item>
     </string-array>
 
     <string-array name="political_standing">
@@ -80,6 +81,7 @@
 
         <string-array name="children">
             <item>Click here</item>
+            <item>0</item>
             <item>1</item>
             <item>2</item>
             <item>3</item>
