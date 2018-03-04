@@ -8,9 +8,9 @@ data class User(
         var dob: Date,
         var race: String,
         var gender: String,
-        var maritalStatus: Enum<MaritalStatus>,
+        var maritalStatus: String,
         var religion: String,
         var annHouseholdIncome: String,
-        var politicalStanding: Enum<PoliticalStanding>,
+        var politicalStanding: String,
         var numChildren: Int,
-        var sexualOrientation: Enum<Sexuality>)
+        var sexualOrientation: String)
