@@ -11,6 +11,12 @@
         android:background="@drawable/demographic_background"
         android:orientation="vertical"
         tools:context="com.jzheadley.poli.UI.SetAccountInfoActivity">
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:background="@drawable/demographic_info"
+            android:layout_gravity="center"/>
 
         <LinearLayout
             android:orientation="vertical"
@@ -18,7 +24,7 @@
             android:layout_height="wrap_content"
             android:background="@color/tintedWhite"
             android:layout_marginHorizontal="30dp"
-            android:layout_marginTop="100dp">
+            android:layout_marginTop="40dp">
 
             <EditText
                 android:id="@+id/editName"
@@ -28,7 +34,6 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-                android:layout_marginTop="63dp"
                 android:ems="10"
                 android:hint="What is your name?" />
 
@@ -93,16 +98,21 @@
                 android:layout_marginHorizontal="10dp"
                 android:entries="@array/gender" />
 
-            <EditText
-                android:id="@+id/editAge"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:ems="10"
-                android:layout_marginHorizontal="10dp"
-                android:hint="What is your DOB (MM/DD/YYYY)?" />
+                android:text="Please select your DOB below using the calendar:"
+                android:textSize="20dp"/>
+
+            <DatePicker
+                android:id="@+id/editAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/set"
+                android:scrollbarSize="100dip"
+
+                />
 
             <TextView
                 android:layout_width="match_parent"
