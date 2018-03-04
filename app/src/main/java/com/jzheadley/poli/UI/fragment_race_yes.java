@@ -46,7 +46,6 @@ public class fragment_race_yes extends AppCompatActivity {
         getRaceYes("Black or African American");
         getRaceYes("prefer not to say");
         getRaceYes("Native Hawaiian or Other Pacific Islander");
-        setupPieChart();
     }
 
     private void setupPieChart() {
@@ -89,11 +88,14 @@ public class fragment_race_yes extends AppCompatActivity {
                     @Override
                     public void onError(Throwable e) {
                         Timber.e(e, "WTF");
+                        setupPieChart();
+
                     }
 
                     @Override
                     public void onComplete() {
                         Timber.v("Finished");
+                        setupPieChart();
                     }
                 });
 
