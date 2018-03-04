@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Poli</string>
     <string name="title_activity_set_account_info">SetAccountInfoActivity</string>
@@ -32,4 +33,64 @@
         <item>In a Relationship</item>
         <item>Other</item>
     </string-array>
-</resources>
+
+    <string-array name="gender">
+        <item>Click here</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Non-binary</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="race">
+        <item>Click here</item>
+        <item>American Indian or Alaska Native</item>
+        <item>Asian</item>
+        <item>Black or African American</item>
+        <item>Native Hawaiian or Other Pacific Islander</item>
+        <item>White</item>
+        <item>Prefer Not to Say</item>
+        <item>Other</item>
+    </string-array>
+
+
+        <string-array name="religiousfaith">
+            <item>Click here</item>
+            <item>Hinduism</item>
+            <item>Buddhism</item>
+            <item>Judiasm</item>
+            <item>Christianity</item>
+            <item>Islam</item>
+            <item>Other</item>
+            <item>Prefer Not to Say</item>
+            <item>Non-religious</item>
+        </string-array>
+
+
+        <string-array name="income">
+            <item>Click here</item>
+            <item>$0-$50,000</item>
+            <item>$51,000-$100,000</item>
+            <item>$101,000-$150,000</item>
+            <item>$151,000-$200,000</item>
+            <item>$200,000+</item>
+            <item>Prefer Not to Say</item>
+        </string-array>
+
+        <string-array name="children">
+            <item>Click here</item>
+            <item>1</item>
+            <item>2</item>
+            <item>3</item>
+            <item>4</item>
+            <item>5</item>
+            <item>6</item>
+            <item>7</item>
+            <item>8</item>
+            <item>9</item>
+            <item>10</item>
+            <item>11+</item>
+            <item>Prefer Not to Say</item>
+        </string-array>
+
+    </resources>
