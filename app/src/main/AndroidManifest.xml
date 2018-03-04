@@ -17,10 +17,10 @@
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter></activity>
-        <activity
-            android:name=".UI.SetAccountInfoActivity"
-            android:label="@string/title_activity_set_account_info"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".UI.PolicyActivity"></activity>
+        <activity android:name=".UI.SetAccountInfoActivity"></activity>
+        <activity android:name=".UI.PolicyListActivity"></activity>
+
     </application>
 
 </manifest>

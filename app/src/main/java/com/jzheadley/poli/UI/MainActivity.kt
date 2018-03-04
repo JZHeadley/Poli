@@ -19,5 +19,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SetAccountInfoActivity::class.java)
             startActivity(intent)
         }
+
+        gotoPolicyButton.setOnClickListener( {
+            val intent = Intent(this, PolicyActivity::class.java)
+            startActivity(intent)
+        })
     }
 }

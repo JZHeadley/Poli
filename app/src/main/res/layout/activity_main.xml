@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    tools:context="com.jzheadley.poli.UI.MainActivity">
+    tools:context="com.jzheadley.poli.UI.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
 
     <TextView
         android:id="@+id/summarizedText"
@@ -17,13 +19,26 @@
         android:text="Hello World!" />
 
     <Button
+
         android:id="@+id/gotoSetAccountInfoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/summarizedText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="30dp"
         android:text="Edit Account Info"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="304dp"
+        />
+
+    <Button
+        android:id="@+id/gotoPolicyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/summarizedText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="View Policy"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="304dp"
         />
@@ -31,4 +46,4 @@
 
 
 
-</android.widget.RelativeLayout>
+</android.widget.LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/policyTextView"
+        android:layout_width="248dp"
+        android:layout_height="154dp"
+        android:text="POLICY TEXT GOES HERE"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_margin="50dp">
+
+
+        <RadioButton
+            android:id="@+id/yesRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="275dp" />
+
+        <RadioButton
+            android:id="@+id/noRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            tools:layout_editor_absoluteX="207dp"
+            tools:layout_editor_absoluteY="268dp" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/voteButton"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+</android.widget.LinearLayout>
