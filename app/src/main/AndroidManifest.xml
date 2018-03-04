@@ -32,6 +32,7 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+        <activity android:name=".UI.fragment_race_yes" />
         <service android:name="com.jzheadley.swifey.network.notifications.FirebaseIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />

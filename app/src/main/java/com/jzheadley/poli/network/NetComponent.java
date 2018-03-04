@@ -4,6 +4,7 @@ package com.jzheadley.poli.network;
 import com.jzheadley.poli.UI.MainActivity;
 import com.jzheadley.poli.UI.PolicyActivity;
 import com.jzheadley.poli.UI.SetAccountInfoActivity;
+import com.jzheadley.poli.UI.fragment_race_yes;
 import com.jzheadley.poli.base.AppModule;
 import com.jzheadley.swifey.network.notifications.FirebaseIDService;
 
@@ -24,4 +25,6 @@ public interface NetComponent {
     void inject(@NotNull FirebaseIDService firebaseIDService);
 
     void inject(@NotNull PolicyActivity policyActivity);
+
+    void inject(fragment_race_yes fragment_race_yes);
 }

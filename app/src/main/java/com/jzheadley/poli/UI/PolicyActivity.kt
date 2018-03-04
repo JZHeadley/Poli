@@ -34,10 +34,12 @@ class PolicyActivity() : AppCompatActivity() {
         policyTextView.setMovementMethod(ScrollingMovementMethod())
         (this.application as BaseApplication).netComponent.inject(this)
 
-        Timber.v("Extras of the PolicyActivity:\t%s", intent.extras.keySet().toList().toString())
-        val bill: Bill = gson.fromJson(intent.extras["bill"].toString(), Bill::class.java)
-        policyTextView.text = bill.summary
-        voteButton.setOnClickListener({ handleVote(bill) })
+        if (!intent.extras.isEmpty) {
+            Timber.v("Extras of the PolicyActivity:\t%s", intent.extras.keySet().toList().toString())
+            val bill: Bill = gson.fromJson(intent.extras["bill"].toString(), Bill::class.java)
+            policyTextView.text = bill.summary
+            voteButton.setOnClickListener({ handleVote(bill) })
+        }
     }
 
     private fun handleVote(bill: Bill) {

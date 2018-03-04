@@ -37,17 +37,16 @@
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="304dp" />
 
-    <!-- <Button
+    <Button
          android:id="@+id/gotoPolicyButton"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
          android:layout_below="@+id/summarizedText"
          android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
          android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
          android:text="View Policy"
          tools:layout_editor_absoluteX="148dp"
          tools:layout_editor_absoluteY="304dp" />
-         -->
 
     <Button
         android:id="@+id/gotoPolicyListButton"
@@ -60,6 +59,7 @@
         android:text="View Policy List"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="304dp" />
+
     <Button
         android:id="@+id/gotoViewPagerButton"
         android:layout_below="@+id/summarizedText"

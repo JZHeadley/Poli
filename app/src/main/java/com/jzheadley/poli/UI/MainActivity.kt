@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import com.jzheadley.poli.R
-import com.jzheadley.poli.R.layout.activity_view_pager
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -21,17 +20,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        gotoPolicyButton.setOnClickListener( {
-//            val intent = Intent(this, PolicyActivity::class.java)
-//            startActivity(intent)
-//        })
-//
+        gotoPolicyButton.setOnClickListener({
+            val intent = Intent(this, PolicyActivity::class.java)
+            startActivity(intent)
+        })
+
 //        gotoPolicyListButton.setOnClickListener( {
 //            val intent = Intent(this,PolicyListActivity::class.java)
 //            startActivity(intent)
 //        })
-        gotoViewPagerButton.setOnClickListener( {
-            val intent = Intent(this, activity_view_pager::class.java)
+        gotoViewPagerButton.setOnClickListener({
+            val intent = Intent(this, fragment_race_yes::class.java)
             startActivity(intent)
         })
     }
