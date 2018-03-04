@@ -24,5 +24,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, PolicyActivity::class.java)
             startActivity(intent)
         })
+
+        gotoPolicyListButton.setOnClickListener( {
+            val intent = Intent(this, PolicyListActivity::class.java)
+            startActivity(intent)
+        })
     }
 }

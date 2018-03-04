@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.widget.LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/itemImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:layout_weight="3"
-        android:adjustViewBounds="true" />
+    android:layout_height="wrap_content"
+    android:id="@+id/recycler_item_row">
 
     <TextView
-        android:id="@+id/itemDate"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top|start"
@@ -21,13 +13,5 @@
         android:layout_weight="1"
         android:text="Some date" />
 
-    <TextView
-        android:id="@+id/itemDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|start"
-        android:layout_weight="1"
-        android:ellipsize="end"
-        android:maxLines="5" />
 
 </android.widget.LinearLayout>

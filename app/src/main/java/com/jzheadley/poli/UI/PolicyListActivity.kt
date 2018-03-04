@@ -18,8 +18,9 @@ class PolicyListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.policy_list_activity)
 
-        linearLayoutManager = LinearLayoutManager(this)
-        recyclerView.layoutManager = linearLayoutManager
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.setHasFixedSize(true)
+        recyclerView.adapter = RecyclerAdapter(mutableListOf("Dylan", "Chris", "Ryan"))
 
     }
 }
