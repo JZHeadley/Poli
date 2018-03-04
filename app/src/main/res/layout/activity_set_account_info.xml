@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jzheadley.poli.UI.SetAccountInfoActivity">
+
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:ems="10"
+        android:text="Name"/>
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/editGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:ems="10"
+        android:text="Gender"/>
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/editEthnicity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:ems="10"
+        android:text="Ethnicity"/>
+
+    <RadioGroup
+        android:layout_marginVertical="50dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:id="@+id/democratRadioButton"
+            android:text="Democrat"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:id="@+id/republicanRadioButton"
+            android:text="Republican"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:id="@+id/neitherRadioButton"
+            android:text="Neither"/>
+    </RadioGroup>
+
+</android.widget.LinearLayout>

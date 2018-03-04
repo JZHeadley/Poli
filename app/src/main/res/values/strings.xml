@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Poli</string>
+    <string name="title_activity_set_account_info">SetAccountInfoActivity</string>
 </resources>

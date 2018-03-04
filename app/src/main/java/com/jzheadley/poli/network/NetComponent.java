@@ -2,7 +2,7 @@ package com.jzheadley.poli.network;
 
 
 
-import com.jzheadley.poli.MainActivity;
+import com.jzheadley.poli.UI.MainActivity;
 import com.jzheadley.poli.base.AppModule;
 
 import javax.inject.Singleton;
