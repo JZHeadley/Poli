@@ -56,44 +56,45 @@
     </string-array>
 
 
-        <string-array name="religiousfaith">
-            <item>Click here</item>
-            <item>Hinduism</item>
-            <item>Buddhism</item>
-            <item>Judaism</item>
-            <item>Christianity</item>
-            <item>Islam</item>
-            <item>Other</item>
-            <item>Non-religious</item>
-            <item>Prefer Not to Say</item>
-        </string-array>
+    <string-array name="religiousfaith">
+        <item>Click here</item>
+        <item>Hinduism</item>
+        <item>Buddhism</item>
+        <item>Judaism</item>
+        <item>Christianity</item>
+        <item>Islam</item>
+        <item>Other</item>
+        <item>Non-religious</item>
+        <item>Prefer Not to Say</item>
+    </string-array>
 
 
-        <string-array name="income">
-            <item>Click here</item>
-            <item>$0-$50,000</item>
-            <item>$51,000-$100,000</item>
-            <item>$101,000-$150,000</item>
-            <item>$151,000-$200,000</item>
-            <item>$200,000+</item>
-            <item>Prefer Not to Say</item>
-        </string-array>
+    <string-array name="income">
+        <item>Click here</item>
+        <item>$0-$50,000</item>
+        <item>$51,000-$100,000</item>
+        <item>$101,000-$150,000</item>
+        <item>$151,000-$200,000</item>
+        <item>$200,000+</item>
+        <item>Prefer Not to Say</item>
+    </string-array>
 
-        <string-array name="children">
-            <item>Click here</item>
-            <item>0</item>
-            <item>1</item>
-            <item>2</item>
-            <item>3</item>
-            <item>4</item>
-            <item>5</item>
-            <item>6</item>
-            <item>7</item>
-            <item>8</item>
-            <item>9</item>
-            <item>10</item>
-            <item>11+</item>
-            <item>Prefer Not to Say</item>
-        </string-array>
+    <string-array name="children">
+        <item>Click here</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11+</item>
+        <item>Prefer Not to Say</item>
+    </string-array>
+    <string name="title_activity_chart_demo">ChartDemo</string>
 
-    </resources>
+</resources>

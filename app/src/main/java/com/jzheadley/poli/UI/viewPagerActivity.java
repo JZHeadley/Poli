@@ -11,12 +11,24 @@ import android.view.MenuItem;
 
 import com.jzheadley.poli.R;
 
-public class viewPagerActivity extends AppCompatActivity {
+public class viewPagerActivity extends FragmentPagerAdapter {
+    private static int NUM_ITEMS= 12;
+
+    public viewPagerActivity(FragmentManager fragmentManager) {
+        super(fragmentManager);
+    }
+    @Override
+    public int getCount() {
+        return NUM_ITEMS;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_pager);
-        ViewPager vpPager = (ViewPager) findViewById(R.id.vpPager);
+   public Fragment getItem(int position){
+        switch (position) {
+            case 0:
+                return ArrayListFragment;
+        }
     }
+
+
 }

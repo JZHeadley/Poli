@@ -34,7 +34,7 @@ apply plugin: 'kotlin-android-extensions'
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:appcompat-v7:27.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
 
@@ -55,8 +55,10 @@ dependencies {
     implementation 'com.jakewharton.timber:timber:4.6.0'
 
     annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 repositories {
     mavenCentral()
+    maven { url "https://jitpack.io" }
 }
