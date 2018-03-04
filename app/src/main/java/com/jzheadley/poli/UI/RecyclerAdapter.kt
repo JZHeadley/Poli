@@ -3,10 +3,22 @@ package com.jzheadley.poli.UI
 import android.os.Parcel
 import android.os.Parcelable
 import android.support.v7.widget.RecyclerView
+import android.view.ViewGroup
 
 class RecyclerAdapter() : RecyclerView.Adapter<RecyclerAdapter>(), Parcelable {
-    constructor(parcel: Parcel) : this() {
+    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): RecyclerAdapter {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
+
+    override fun onBindViewHolder(holder: RecyclerAdapter?, position: Int) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun getItemCount(): Int {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
 
