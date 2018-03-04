@@ -1,40 +1,34 @@
 package com.jzheadley.poli.UI
 
-import android.os.Parcel
-import android.os.Parcelable
+import android.view.View
 import android.support.v7.widget.RecyclerView
+import android.view.LayoutInflater
+import android.view.TextureView
 import android.view.ViewGroup
+import android.widget.TextView
+import com.jzheadley.poli.R
+import org.w3c.dom.Text
 
-class RecyclerAdapter() : RecyclerView.Adapter<RecyclerAdapter>(), Parcelable {
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): RecyclerAdapter {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun onBindViewHolder(holder: RecyclerAdapter?, position: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+class RecyclerAdapter(var names: MutableList<String>) : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
     override fun getItemCount(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return names.size
     }
 
-
-
-    override fun writeToParcel(parcel: Parcel, flags: Int) {
-
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.title.text = names[position]
     }
 
-    override fun describeContents(): Int {
-        return 0
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        var view: View = LayoutInflater.from(parent.context).inflate(R.layout.recycler_item_row, parent, false)
+        return ViewHolder(view)
     }
 
-    companion object CREATOR : Parcelable.Creator<RecyclerAdapter> {
-        override fun createFromParcel(parcel: Parcel): RecyclerAdapter {
-            return RecyclerAdapter(parcel)
-        }
+    class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
+        val title: TextView = view.findViewById(R.id.title);
+        init{
 
-        override fun newArray(size: Int): Array<RecyclerAdapter?> {
-            return arrayOfNulls(size)
         }
     }
+
 }

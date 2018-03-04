@@ -43,6 +43,18 @@
         tools:layout_editor_absoluteY="304dp"
         />
 
+    <Button
+        android:id="@+id/gotoPolicyListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/summarizedText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="View Policy List"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="304dp"
+        />
+
 
 
 
