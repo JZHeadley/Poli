@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
 <android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,60 +16,120 @@
 
     <EditText
         android:id="@+id/editName"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="63dp"
-        android:ems="10"
-        android:text="Name"/>
-    <EditText
-        android:layout_gravity="center"
-        android:id="@+id/editGender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="63dp"
-        android:ems="10"
-        android:text="Gender"/>
-    <EditText
-        android:layout_gravity="center"
-        android:id="@+id/editEthnicity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="63dp"
-        android:ems="10"
-        android:text="Ethnicity"/>
-
-    <RadioGroup
-        android:id="@+id/radio_button_party"
-        android:layout_marginVertical="50dp"
-        android:layout_marginHorizontal="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_weight="30"
-            android:layout_height="wrap_content"
-            android:id="@+id/democratRadioButton"
-            android:text="Democrat"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_weight="30"
-            android:layout_height="wrap_content"
-            android:id="@+id/republicanRadioButton"
-            android:text="Republican"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_weight="30"
-            android:layout_height="wrap_content"
-            android:id="@+id/neitherRadioButton"
-            android:text="Neither"/>
-    </RadioGroup>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="63dp"
+        android:ems="10"
+        android:hint="What is your name?" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is your sexuality?"
+        android:textSize="23dp"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="What is your sexuality?"
+        android:entries="@array/sexuality" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is your political standing?"
+        android:textSize="23dp"/>
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="What is your political standing?"
+        android:entries="@array/political_standing" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is your marital status?"
+        android:textSize="23dp"/>
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="What is your marital status?"
+        android:entries="@array/marital_status" />
+
+    <EditText
+        android:id="@+id/editGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="What is your gender?" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="What is your age?" />
+
+    <EditText
+        android:id="@+id/editEthnicity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="What is your ethnicity?" />
+
+    <EditText
+        android:id="@+id/editMaritalStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="What is your marital status?" />
+
+    <EditText
+        android:id="@+id/editReligion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="What is your religious faith?" />
+
+    <EditText
+        android:id="@+id/editIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="What is your annual household income?" />
+
+    <EditText
+        android:id="@+id/editChildren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="How many children do you have?" />
+
 
 </android.widget.LinearLayout>
+</ScrollView>
