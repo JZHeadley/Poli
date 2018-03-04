@@ -2,8 +2,10 @@ package com.jzheadley.poli.network;
 
 
 import com.jzheadley.poli.UI.MainActivity;
+import com.jzheadley.poli.UI.PolicyActivity;
 import com.jzheadley.poli.UI.SetAccountInfoActivity;
 import com.jzheadley.poli.base.AppModule;
+import com.jzheadley.swifey.network.notifications.FirebaseIDService;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -18,4 +20,8 @@ public interface NetComponent {
 
 
     void inject(@NotNull SetAccountInfoActivity setAccountInfoActivity);
+
+    void inject(@NotNull FirebaseIDService firebaseIDService);
+
+    void inject(@NotNull PolicyActivity policyActivity);
 }

@@ -1,10 +1,12 @@
 package com.jzheadley.poli.models
 
-import java.sql.Date
+import android.annotation.SuppressLint
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
+@SuppressLint("ParcelCreator")
+@Parcelize
 class Bill(
         val billId: Long,
         val summary: String,
-        val dateFound: Date,
-        val urlToArticle: String) {
-}
+        val urlToArticle: String) : Parcelable

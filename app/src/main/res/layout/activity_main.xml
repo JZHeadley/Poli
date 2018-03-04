@@ -1,75 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:gravity="center"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    tools:context="com.jzheadley.poli.UI.MainActivity"
     android:orientation="vertical"
-    android:gravity="center"
-    android:background="@drawable/gradient">
+    tools:context="com.jzheadley.poli.UI.MainActivity">
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="300dp"
         android:layout_height="300dp"
+        android:layout_width="300dp"
         android:src="@drawable/poli_poll_logo"
         android:visibility="visible"
         tools:layout_editor_absoluteX="300dp"
         tools:layout_editor_absoluteY="304dp" />
+
     <TextView
         android:id="@+id/summarizedText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/gotoSetAccountInfoButton"
-        android:layout_marginTop="10dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content" />
 
     <Button
-
         android:id="@+id/gotoSetAccountInfoButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_below="@+id/summarizedText"
         android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
         android:text="Edit Account Info"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="304dp" />
 
-    <Button
-        android:id="@+id/gotoPolicyButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/summarizedText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:text="View Policy"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="304dp" />
+    <!-- <Button
+         android:id="@+id/gotoPolicyButton"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/summarizedText"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="10dp"
+         android:text="View Policy"
+         tools:layout_editor_absoluteX="148dp"
+         tools:layout_editor_absoluteY="304dp" />
+         -->
 
     <Button
         android:id="@+id/gotoPolicyListButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_below="@+id/summarizedText"
         android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
         android:text="View Policy List"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="304dp" />
     <Button
         android:id="@+id/gotoViewPagerButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_below="@+id/summarizedText"
         android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
         android:text="Statistics"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="304dp" />
-
-
 
 </android.widget.LinearLayout>

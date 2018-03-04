@@ -56,6 +56,7 @@ class SetAccountInfoActivity : AppCompatActivity() {
 
                     override fun onError(e: Throwable) {
                         Timber.wtf(e, "Something went worng in submitting the user demographics")
+                        finish()
                     }
 
                     override fun onSubscribe(d: Disposable) {

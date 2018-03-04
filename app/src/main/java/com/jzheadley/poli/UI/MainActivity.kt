@@ -21,15 +21,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        gotoPolicyButton.setOnClickListener( {
-            val intent = Intent(this, PolicyActivity::class.java)
-            startActivity(intent)
-        })
-
-        gotoPolicyListButton.setOnClickListener( {
-            val intent = Intent(this,PolicyListActivity::class.java)
-            startActivity(intent)
-        })
+//        gotoPolicyButton.setOnClickListener( {
+//            val intent = Intent(this, PolicyActivity::class.java)
+//            startActivity(intent)
+//        })
+//
+//        gotoPolicyListButton.setOnClickListener( {
+//            val intent = Intent(this,PolicyListActivity::class.java)
+//            startActivity(intent)
+//        })
         gotoViewPagerButton.setOnClickListener( {
             val intent = Intent(this, activity_view_pager::class.java)
             startActivity(intent)
