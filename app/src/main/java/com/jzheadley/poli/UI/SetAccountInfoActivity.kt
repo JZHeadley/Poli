@@ -13,6 +13,7 @@ import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_set_account_info.*
 import timber.log.Timber
 import java.sql.Date
+import java.util.*
 import javax.inject.Inject
 
 class SetAccountInfoActivity : AppCompatActivity() {
@@ -29,7 +30,7 @@ class SetAccountInfoActivity : AppCompatActivity() {
     }
 
     private fun submitDemographicInfo() {
-        var user: User = User("",
+        var user: User = User(UUID.randomUUID().toString(),
                 editName.text.toString(),
                 Date(-1),
                 editRace.selectedItem.toString(),
