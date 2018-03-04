@@ -21,12 +21,16 @@ class SetAccountInfoActivity : AppCompatActivity() {
         (application as BaseApplication).netComponent.inject(this)
         submit_demographic_info_btn.setOnClickListener({ submitDemographicInfo() })
 
+
+
     }
 
     private fun submitDemographicInfo() {
         var user: User = User("",
                 editName.text.toString(),
                 Date(-1),
+
+
                 editRace.selectedItem.toString(),
                 editGender.selectedItem.toString(),
                 MaritalStatus.valueOf(maritalSpinner.selectedItem.toString().toUpperCase().replace("\\s".toRegex(), "")),
