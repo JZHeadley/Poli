@@ -1,4 +1,35 @@
 <resources>
     <string name="app_name">Poli</string>
     <string name="title_activity_set_account_info">SetAccountInfoActivity</string>
+    <string name="sexuality">What is your sexuality?</string>
+
+    <string-array name="sexuality">
+        <item>Click here</item>
+        <item>Asexual</item>
+        <item>Ally</item>
+        <item>Bisexual</item>
+        <item>Lesbian</item>
+        <item>Transgender</item>
+        <item>Transsexual</item>
+        <item>Queer</item>
+        <item>Intersex</item>
+        <item>Gay</item>
+    </string-array>
+
+    <string-array name="political_standing">
+        <item>Click here</item>
+        <item>Democrat</item>
+        <item>Moderate</item>
+        <item>Republican</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="marital_status">
+        <item>Click here</item>
+        <item>Married</item>
+        <item>Single</item>
+        <item>In a Relationship</item>
+        <item>Other</item>
+    </string-array>
 </resources>
