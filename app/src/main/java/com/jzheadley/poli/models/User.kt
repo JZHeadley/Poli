@@ -10,7 +10,7 @@ data class User(
         var gender: String,
         var maritalStatus: Enum<MaritalStatus>,
         var religion: String,
-        var annHouseholdIncome: Double,
+        var annHouseholdIncome: String,
         var politicalStanding: Enum<PoliticalStanding>,
         var numChildren: Int,
         var sexualOrientation: Enum<Sexuality>)
