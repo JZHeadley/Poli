@@ -4,22 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/demographic_background">
 
     <TextView
         android:id="@+id/policyTextView"
-        android:layout_width="248dp"
-        android:layout_height="154dp"
-        android:text="POLICY TEXT GOES HERE"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="10dp"
+        android:background="#88000000"
+        android:maxLines="1000"
+        android:scrollbars="vertical"
+        android:text="POLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HEREPOLICY TEXT GOES HERE"
+        android:textColor="@android:color/white"
         tools:layout_editor_absoluteX="68dp"
         tools:layout_editor_absoluteY="42dp" />
 
+    <TextView
+        android:id="@+id/whatVoteTextView"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#88000000"
+        android:textSize="20dp"
+        android:text="What is your vote?"
+        android:textColor="@android:color/white"
+         />
     <RadioGroup
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal"
-        android:layout_margin="50dp">
+        android:layout_marginHorizontal="50dp">
 
 
         <RadioButton
@@ -44,6 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
+        android:layout_marginVertical="30dp"
         tools:layout_editor_absoluteX="218dp"
         tools:layout_editor_absoluteY="364dp" />
 
