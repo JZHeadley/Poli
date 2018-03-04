@@ -59,12 +59,12 @@
             <item>Click here</item>
             <item>Hinduism</item>
             <item>Buddhism</item>
-            <item>Judiasm</item>
+            <item>Judaism</item>
             <item>Christianity</item>
             <item>Islam</item>
             <item>Other</item>
-            <item>Prefer Not to Say</item>
             <item>Non-religious</item>
+            <item>Prefer Not to Say</item>
         </string-array>
 
 

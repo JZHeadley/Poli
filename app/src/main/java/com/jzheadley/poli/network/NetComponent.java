@@ -1,9 +1,11 @@
 package com.jzheadley.poli.network;
 
 
-
 import com.jzheadley.poli.UI.MainActivity;
+import com.jzheadley.poli.UI.SetAccountInfoActivity;
 import com.jzheadley.poli.base.AppModule;
+
+import org.jetbrains.annotations.NotNull;
 
 import javax.inject.Singleton;
 
@@ -15,4 +17,5 @@ public interface NetComponent {
     void inject(MainActivity activity);
 
 
+    void inject(@NotNull SetAccountInfoActivity setAccountInfoActivity);
 }
