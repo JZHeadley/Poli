@@ -3,6 +3,7 @@
     <string name="app_name">Poli</string>
     <string name="title_activity_set_account_info">SetAccountInfoActivity</string>
     <string name="sexuality">What is your sexuality?</string>
+    <string name="submit_btn">Submit</string>
 
     <string-array name="sexuality">
         <item>Click here</item>
