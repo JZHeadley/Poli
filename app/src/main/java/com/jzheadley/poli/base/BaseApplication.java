@@ -35,7 +35,7 @@ public class BaseApplication extends Application {
         netComponent = DaggerNetComponent.builder()
                 .appModule(new AppModule(this))
                 // .netModule(new NetModule("http://jzheadley.com:5071//api/"))
-                .netModule(new NetModule("http://10.254.254.20:8080/"))
+                .netModule(new NetModule("http://ec2-52-23-204-172.compute-1.amazonaws.com:8080/"))
                 .build();
     }
 
