@@ -1,141 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/ScrollView01"
-    android:layout_height="fill_parent"
-    android:layout_width="fill_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
     <android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:background="@drawable/demographic_background"
-        android:layout_height="match_parent"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/demographic_background"
         android:orientation="vertical"
         tools:context="com.jzheadley.poli.UI.SetAccountInfoActivity">
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:background="@drawable/demographic_info"
+            android:layout_gravity="center"/>
 
-
-        <EditText
-            android:ems="10"
-            android:hint="What is your name?"
-            android:id="@+id/editName"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="63dp"
-            android:layout_width="match_parent" />
-
-        <TextView
-            android:layout_height="wrap_content"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:text="What is your sexuality?"
-            android:textSize="23dp" />
-
-        <Spinner
-            android:autofillHints="What is your sexuality?"
-            android:entries="@array/sexuality"
-            android:id="@+id/sexualitySpinner"
             android:layout_height="wrap_content"
-            android:layout_width="match_parent" />
+            android:background="@color/tintedWhite"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp">
 
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="What is your political standing?"
-            android:textSize="23dp" />
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="What is your name?" />
 
-        <Spinner
-            android:autofillHints="What is your political standing?"
-            android:entries="@array/political_standing"
-            android:id="@+id/politicalSpinner"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent" />
+            <TextView
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is your sexuality?"
+                android:textSize="23dp" />
 
-        <TextView
-            android:id="@+id/maritalStatus"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="What is your marital status?"
-            android:textSize="23dp" />
+            <Spinner
+                android:id="@+id/sexualitySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="What is your sexuality?"
+                android:layout_marginHorizontal="10dp"
+                android:entries="@array/sexuality" />
 
-        <Spinner
-            android:autofillHints="What is your marital status?"
-            android:entries="@array/marital_status"
-            android:id="@+id/maritalSpinner"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is your political standing?"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="23dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="What gender do you identify as?"
-        android:textSize="23dp"/>
-    <Spinner
-        android:id="@+id/editGender"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints="What is your gender?"
-        android:entries="@array/gender" />
+            <Spinner
+                android:id="@+id/politicalSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="What is your political standing?"
+                android:layout_marginHorizontal="10dp"
+                android:entries="@array/political_standing" />
 
-    <EditText
-        android:id="@+id/editAge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:ems="10"
-        android:hint="What is your DOB (MM/DD/YYYY)?" />
+            <TextView
+                android:id="@+id/maritalStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is your marital status?"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="23dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="What is your race?"
-        android:textSize="23dp"/>
-    <Spinner
-        android:id="@+id/editRace"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints="What is your ethnicity?"
-        android:entries="@array/race" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="What is your religious faith?"
-        android:textSize="23dp"/>
-    <Spinner
-        android:id="@+id/editReligion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints="What is your religious faith?"
-        android:entries="@array/religiousfaith" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="What is your total annual household income?"
-        android:textSize="23dp"/>
-    <Spinner
-        android:id="@+id/editIncome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints="What is your total annual household income?"
-        android:entries="@array/income" />
+            <Spinner
+                android:id="@+id/maritalSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="What is your marital status?"
+                android:layout_marginHorizontal="10dp"
+                android:entries="@array/marital_status" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="How many children do you have?"
-        android:textSize="23dp"/>
-    <Spinner
-        android:id="@+id/editChildren"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints="How many children do you have?"
-        android:entries="@array/children" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What gender do you identify as?"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="23dp" />
+
+            <Spinner
+                android:id="@+id/editGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="What is your gender?"
+                android:layout_marginHorizontal="10dp"
+                android:entries="@array/gender" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please select your DOB below using the calendar:"
+                android:textSize="20dp"/>
+
+            <DatePicker
+                android:id="@+id/editAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/set"
+                android:scrollbarSize="100dip"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is your race?"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="23dp" />
+
+            <Spinner
+                android:id="@+id/editRace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="What is your ethnicity?"
+                android:layout_marginHorizontal="10dp"
+                android:entries="@array/race" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is your religious faith?"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="23dp" />
+
+            <Spinner
+                android:id="@+id/editReligion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="What is your religious faith?"
+                android:layout_marginHorizontal="10dp"
+                android:entries="@array/religiousfaith" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is your total annual household income?"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="23dp" />
+
+            <Spinner
+                android:id="@+id/editIncome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="What is your total annual household income?"
+                android:layout_marginHorizontal="10dp"
+                android:entries="@array/income" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How many children do you have?"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="23dp" />
+
+            <Spinner
+                android:id="@+id/editChildren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="How many children do you have?"
+                android:layout_marginHorizontal="10dp"
+                android:entries="@array/children" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/submit_demographic_info_btn"
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/submit_btn" />
     </android.widget.LinearLayout>
 </ScrollView>
